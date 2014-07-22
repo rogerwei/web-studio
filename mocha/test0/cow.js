@@ -14,6 +14,16 @@
             }
             
             return this.name + " greets " + target;
+        },
+        
+        lateGreets: function(target, cb) {
+            setTimeout(function(self) {
+                try {
+                    cb( null, self.greets(target));
+                } catch(err) {
+                    cb(err);
+                }
+            }, 1000, this);
         }
     };
     
