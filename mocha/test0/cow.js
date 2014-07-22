@@ -1,4 +1,5 @@
 //cow.js
+//from:http://blog.codeship.io/2014/01/22/testing-frontend-javascript-code-using-mocha-chai-and-sinon.html
 (function(exports) {
     "use strict";
     
